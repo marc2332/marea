@@ -1,0 +1,24 @@
+{
+	"name": "Marea",
+	"version": "1.0.0",
+	"description": "like plex but made by me",
+	"main": "index.js",
+	"scripts": {
+		"watch:public": "parcel watch src/ui/index.html --target browser --out-dir src/ui/dist --public-url ./"
+	},
+	"author": "Marc Espín Sanz <mespinsanz@gmail.com>",
+	"license": "ISC",
+	"devDependencies": {
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"parcel": "^1.12.4",
+		"typescript": "^3.9.3"
+	},
+	"dependencies": {
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-router-dom": "^5.2.0",
+		"styled-components": "^5.1.1"
+	}
+}

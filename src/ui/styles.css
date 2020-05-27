@@ -1,0 +1,7 @@
+@font-face {
+	font-family: Inter;
+	src: url('./assets/Inter.otf') format("opentype");
+}
+* {
+	font-family: Inter;
+}

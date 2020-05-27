@@ -1,0 +1,5 @@
+scripts:
+  dev: 
+    pll:
+      - denon run -A mod.ts
+      - npm run watch:public
