@@ -1,6 +1,6 @@
 import { dirname, join, opine, serveStatic, config } from "./depts.ts";
 
-const c = config()
+const Env = config()
 
 const API_VERSION = "0.0.1"
 const API_PORT = 3000
@@ -19,7 +19,7 @@ app.get('/api', (req,res)=>{
 })
 
 app.get('/api/movies', async (req,res)=>{
-	res.send(await getMovies(c))
+	res.send(await getMovies(Env))
 })
 
 app.use('/web', (req,res,next)=>{
@@ -34,7 +34,10 @@ app.get('/', (req,res,next)=>{
 	res.send("works")
 })
 
-
+app.use('/api/videoshare/:video', (req, res, next) => {
+	console.log(req.params,`${Env.MOVIES_PATH}\\\\${req.params.video}`)
+	res.sendFile(`${Env.MOVIES_PATH}\\\\${req.params.video}`)
+})
 
 
 app.listen(API_PORT);

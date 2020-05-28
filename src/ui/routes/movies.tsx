@@ -29,7 +29,7 @@ class List extends React.Component {
 					return (
 						<Card key={name} name={name} title={title} id={id}/>
 					)
-				)}}
+				})}
 			</ListStyled>
 		)
 	}

@@ -27,7 +27,7 @@ const Card = ({ title, name, id }) => {
 	let history = useHistory();
 	
 	function goPlay(){
-		history.push(`/web/index.html/player/${id}`)
+		history.push(`/web/index.html/player/${name}`)
 	}
 	
 	return (

@@ -16,6 +16,6 @@ usage:
 - npm install
 - `vr dev`
 
-### does it currently work?
+### what does it?
 
-no
+it shows you the content stored in a path and you can play them right from the browser, but only MP4 files.

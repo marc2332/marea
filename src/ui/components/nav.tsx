@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from 'styled-components'
 
 const NavStyled = styled.div`
+	height: 20px;
 	padding: 15px;
 	background: lightblue;
 	& a {
